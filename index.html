@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakzhol</title>
+
+    <style>
+        :root {
+            --primary: #b983ff;
+            --primary-foreground: #fff;
+            --muted: #dadada;
+            --card: rgba(0, 0, 0, 0.5);
+            --card-foreground: #fff;
+        }
+
+        body {
+            margin: 0;
+            background:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("assets/bg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 16px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 32px;
+            width: 100%;
+            max-width: 420px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.35);
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 12px 0;
+            font-size: 32px;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 24px;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        .links a {
+            display: block;
+            width: 100%;
+            background: var(--primary);
+            color: var(--primary-foreground);
+            padding: 14px 0;
+            margin: 8px 0;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .links a:hover {
+            background: #a06cff;
+            transform: scale(1.02);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Адаптивность для маленьких экранов */
+        @media (max-width: 400px) {
+            .card {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .links a {
+                padding: 12px 0;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Bakzhol Sadyrzhanuly</h1>
+        <p class="subtitle">From Kazakhstan — D variant<br>Birthday: 18.04.2009</p>
+
+        <div class="links">
+            <a href="http://t.me/xexmlm" target="_blank">Telegram</a>
+            <a href="https://www.instagram.com/bakzhol.s?igsh=MWE5eXpqdTRkeG12" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@bedxl" target="_blank">TikTok</a>
+            <a href="https://anixart-app.com//profile/4412097" target="_blank">Anixart</a>
+            <a href="https://discordapp.com/users/1438334571841192092" target="_blank">Discord</a>
+        </div>
+
+        <p class="footer">Created by Bakzhol</p>
+    </div>
+</body>
+</html>
